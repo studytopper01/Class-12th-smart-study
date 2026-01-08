@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+}
+
+.app {
+  padding: 40px;
+}
+
+.menu a {
+  display: block;
+  margin: 15px auto;
+  padding: 15px;
+  width: 80%;
+  background: rgba(255,255,255,0.15);
+  border-radius: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: rgba(255,255,255,0.3);
+  transform: scale(1.05);
+}
+
+.fade {
+  animation: fadeIn 2s;
+}
+
+.slide {
+  animation: slideUp 2s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideUp {
+  from {transform: translateY(40px);}
+  to {transform: translateY(0);}
+}
